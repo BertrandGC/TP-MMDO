@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DetailsPage } from '../details/details';
 
 export interface Result {
   title: string;
@@ -35,6 +36,12 @@ export class HomePage {
     } else {
       this.results = [];
     }
+  }
+
+  goToOtherPage(item: any){
+    this.navCtrl.push(DetailsPage, {
+      item: item
+    });
   }
 
 }
