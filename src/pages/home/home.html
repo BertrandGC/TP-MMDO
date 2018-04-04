@@ -4,6 +4,7 @@
       Ionic Blank
     </ion-title>
   </ion-navbar>
+<<<<<<< HEAD
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 </ion-header>
 
@@ -21,3 +22,30 @@
     </ion-item>
   </ion-list>
 </ion-content>
+=======
+
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let search of items">
+    {{ item }}
+  </ion-item>
+</ion-list>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+    <ion-item *ngFor = "let item of results">
+      <ion-thumbnail item-start>
+        <img src={{item.image}}>
+      </ion-thumbnail>
+      <h2>{{item.title}}</h2>
+      <p>{{item.author}} • {{item.date}}</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+
+
+>>>>>>> c93cdfb4785a75fe2f3b0c096a6bbeb2bf598d2b
