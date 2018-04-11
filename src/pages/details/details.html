@@ -14,7 +14,9 @@
 
 
 <ion-content padding>
-  <p>Je suis la details.</p>
-<img src="{{ item.image }}">
-
+<p>{{ item.original_title}}</p>
+<p>{{ item.tagline}}</p>
+<p>{{ item.release_date}}</p>
+<img src="https://image.tmdb.org/t/p/w185/{{ item.poster_path }}">
+<p>{{ item.overview}}</p>
 </ion-content>
